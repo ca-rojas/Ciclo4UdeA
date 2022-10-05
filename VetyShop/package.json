@@ -1,0 +1,11 @@
+{
+  "name": "vetyshop",
+  "version": "1.0.0",
+  "description": "Tienda virtual de productos para mascotas",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cesar Rojas",
+  "license": "ISC"
+}
