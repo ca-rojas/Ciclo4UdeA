@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node back/server.js",
-    "dev":"SET NODE_ENV=DEVELOPMENT& nodemon back/server",
-    "prod":"SET NODE_ENV=PRODUCTION& nodemon back/server"
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon back/server",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon back/server"
   },
   "author": "Cesar Rojas",
   "license": "ISC",
