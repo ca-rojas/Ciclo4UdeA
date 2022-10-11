@@ -5,6 +5,8 @@ const connectDatabase=()=>{
         useUnifiedTopology:true
     }).then(con=>{
         console.log(`MongoDB connected to the server: ${con.connection.host}`)
+    }).catch(con=>{
+        console.log(`Could not connect MondoDB`)
     })
 }
 
