@@ -1,0 +1,19 @@
+# new product creation
+POST http://127.0.0.1:4000/api/products/new
+content-type: application/json
+
+{
+    "name" : "Whiskas 250g",
+    "price" : "25000",
+    "description" : "Whiskas en sobre de 250g",
+    "rating" : 4.9,
+    "image" : [{
+        "public_id" : "productos/asdasada1231aas",
+        "url" : "https://www.agrocampo.com.co/media/catalog/product/cache/d51e0dc10c379a6229d70d752fc46d83/1/1/111110880_ed-min.jpg"
+    }],
+    "category" : "Dry food",
+    "vendor" : "Natali Velasquez",
+    "inventory" : 50,
+    "totalRatings" : 32,
+    "opinions": []
+}
