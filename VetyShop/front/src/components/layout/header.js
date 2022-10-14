@@ -1,13 +1,15 @@
 import React, { Fragment } from 'react'
 
-const header = () => {
+const Header = () => {
   return (
-    <nav className='navbar row'>
+    <Fragment>
+        <nav className='navbar row'>
             <div className='col-12 col-md-3'>
                 <div className='navbar-brand'>
                     <img src="./images/vetyshop.png" alt="Vety Shop Store Logo"></img>
                 </div>
             </div>
+
             <div className='col-12 col-md-6 mt-2 mt-md-0'>
                 <div className="input-group">
                     <input 
@@ -17,7 +19,8 @@ const header = () => {
                         placeholder='Que producto busca?'></input>
                         <div class="input-group-append">
                             <button id="search-btn" class="btn">
-                                <i class="fa fa fa" aria-hidden="true"></i>
+                                <i class="fa fa-search" aria-hidden="true">Buscar</i>
+                                
                                 </button>    
                         </div>
                 </div>
@@ -27,8 +30,11 @@ const header = () => {
                 <span id="cart" className="ml-3">Carrito</span>
                 <span className="ml-1" id="cart_count">2</span>
             </div>
-    </nav>
+
+        </nav>
+
+    </Fragment>
   )
 }
 
-export default header
+export default Header

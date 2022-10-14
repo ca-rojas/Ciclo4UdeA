@@ -1,13 +1,23 @@
 import './App.css';
 import React from 'react';
-import header from './components/layout/header';
+import Header from './components/layout/Header';
+import { Footer } from './components/layout/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <header></header>
-      <h1>Tienda para mascotas VetyShop</h1>
-      <img src='./images/vetyshop.png' alt='VetyShop logo'></img>
+        <Header />
+        <center>Contenido aqui</center>
+        <center>Contenido aqui</center>
+        <center>Contenido aqui</center>
+        <center>Contenido aqui</center>
+        <center>Contenido aqui</center>
+        <center>Contenido aqui</center>
+        <center>Contenido aqui</center>
+        <center>Contenido aqui</center>
+        <center>Contenido aqui</center>
+        <Footer />
     </div>
   );
 }
