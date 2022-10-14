@@ -3,8 +3,8 @@ POST http://127.0.0.1:4000/api/products/new
 content-type: application/json
 
 {
-    "name" : "Whiskas 250g",
-    "price" : "25000",
+    "name" : "Whiskas 500g",
+    "price" : "50000",
     "description" : "Whiskas en sobre de 250g",
     "rating" : 4.9,
     "image" : [{
