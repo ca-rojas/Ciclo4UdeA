@@ -614,11 +614,3 @@ ul.CTAs a {
   font-size: 0.8rem;
   color: grey;
 }
-
-.btn {
-  color: white;
-}
-
-.btn:hover {
-  color: yellow;
-}
