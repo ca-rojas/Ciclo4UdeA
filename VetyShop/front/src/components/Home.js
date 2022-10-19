@@ -1,8 +1,18 @@
 import React, { Fragment } from 'react'
+import Metadata from './layout/MetaData'
+import {useDispatch} from 'react-redux'  
+import { getProducts } from '../actions/productActions'
 
 export const Home = () => {
+  
+  const dispatch = useDispatch();
+    useEffect(() => {
+      dispatch(getProducts());
+    }, [dispatch])
+
   return (
     <Fragment>
+        <Metadata title="Lo mejor para tu mascota"></Metadata>
         <h1 id="encabezado_productos">Ultimos Productos</h1>
 
         <section id="productos" className='container mt-5'>
