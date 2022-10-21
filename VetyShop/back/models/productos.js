@@ -1,27 +1,27 @@
 const mongoose=require("mongoose")
 
 const productosSchema=mongoose.Schema({
-    name:{
+    nombre:{
         type:String,
         required:[true,"Por favor registra el nombre del producto."],
         trim:true,
         maxLength:[120,"El nombre del producto no debe exceder los 120 caracteres."]
     },
-    price:{
+    precio:{
         type: Number,
         required:[true,"Por favor registre el precio del producto."],
         maxLength:[8, "El precio del producto no puede estar por encima de 99'999.999"],
         default: 0.0
     },
-    description:{
+    descripcion:{
       type:String,
       required:[true,"Por favor registre una descripcion para el producto."]
     },
-    rating:{
+    calificacion:{
         type: Number,
         default: 0
     },
-    image:[
+    imagen:[
         {
             public_id:{
                 type:String,
@@ -33,7 +33,7 @@ const productosSchema=mongoose.Schema({
             }
         }
     ],
-    category:{
+    categoria:{
         type:String,
         required:[true,"Por favor seleccione la categoria del producto."],
         enum:{
@@ -48,21 +48,21 @@ const productosSchema=mongoose.Schema({
             ]
         }
     },
-    vendor:{
+    vendedor:{
         type:String,
         required:[true,"Por favor registre el vendedor de producto"]
     },
-    inventory:{
+    inventario:{
         type: Number,
         required:[true, "Por favor registre el stock del producto"],
         maxLength:[5,"Cantidad maxima del producto no puede sobrepasar 99999"],
         default:0
     },
-    totalRatings:{
+    numCalificaciones:{
         type:Number,
         default:0
     },
-    opinions:[
+    opiniones:[
         {
             nombreCliente:{
                 type:String,
@@ -78,11 +78,11 @@ const productosSchema=mongoose.Schema({
             }
         }
     ],
-    creationDate:{
+    fechaCreacion:{
         type:Date,
         default:Date.now
     }
 
 })
 
-module.exports=mongoose.model("products",productsSchema)
+module.exports=mongoose.model("productos",productosSchema)

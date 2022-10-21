@@ -6,6 +6,6 @@ app.use(express.json());
 //Importar rutas
 const productos=require("./routes/products")
 
-app.use('/api',products) //Sujeto a decision (ruta del navegador)
+app.use('/api',productos) //Sujeto a decision (ruta del navegador)
 
 module.exports=app
