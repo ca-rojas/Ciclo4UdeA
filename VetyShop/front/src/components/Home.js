@@ -5,6 +5,7 @@ import { getProducts } from '../actions/productActions'
 import { Link } from 'react-router-dom'
 import { useAlert} from 'react-alert'
 
+
 export const Home = () => {
     const { loading, productos, error} = useSelector(state=> state.products)
     const alert= useAlert();
@@ -17,8 +18,7 @@ export const Home = () => {
 
         dispatch(getProducts());
         alert.success("OK")
-    }, [dispatch])
-
+    }, [dispatch, alert, error])
 
     return (
         <Fragment>
